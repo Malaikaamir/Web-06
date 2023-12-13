@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Person Database</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Person Database</h1>
+
+    <div id="personForm">
+      <h2>Add New Person</h2>
+      <label for="personId">ID:</label>
+      <input type="text" id="personId" placeholder="Enter ID">
+
+      <label for="personName">Name:</label>
+      <input type="text" id="personName" placeholder="Enter Name">
+
+      <label for="personAge">Age:</label>
+      <input type="number" id="personAge" placeholder="Enter Age">
+
+      <button onclick="addPerson()">Add Person</button>
+    </div>
+
+    <h2>People's List</h2>
+    <ul id="peopleList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
